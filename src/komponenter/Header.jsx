@@ -15,7 +15,10 @@ function Header({isLoggedIn}) {
     
     {title: "Start", href:"/start"},
     {title: "Utveckling", href:"/info",
-       underlink: [{title: "Koldioxidutsläpp", href:"/info/koldioxidutsläpp"}]
+       underlink: [{title: "Koldioxid", href:"/koldioxid"},
+        {title: "Globala temperaturer", href:"/globala"},
+         {title: "Glaciärstorlekar", href:"/glaci"}
+       ]
 
     },
     {title: "Profil", href: "/profil"},

@@ -37,12 +37,12 @@ return (
         <label className="flex flex-col"> Användarnamn:
             <input type="text" value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="rounded border border-neutral-600 p-2 " placeholder="Användarnamn"/>
+            className="rounded border border-neutral-600 bg-white p-2 " placeholder="Användarnamn"/>
         </label>
         <label className="flex flex-col"> Lösenord:
             <input type="password" value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="rounded border border-neutral-600 p-2 " placeholder="Lösenord"/>
+            className="rounded border border-neutral-600 bg-white p-2 " placeholder="Lösenord"/>
         </label>
 
         <Button></Button>

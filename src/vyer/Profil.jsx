@@ -1,8 +1,10 @@
+import KortProfil from "../komponenter/KortProfil"
+
 function Profil () {
 
 return (
 
-<></>
+<><KortProfil/></>
 
 )
 

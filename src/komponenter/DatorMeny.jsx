@@ -18,7 +18,7 @@ function DatorMeny({links}) {
     return (
         <nav className="flex">
             <ul className="flex flex-row gap-6 px-4">
-                {links.map((link)=> (<MenyItem key={link.title} href={link.href}>
+                {links.map((link)=> (<MenyItem key={link.title} item={link}>
                     {link.title}
                     
                     </MenyItem>

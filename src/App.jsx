@@ -1,11 +1,14 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import './Index.css'
 import Login from './vyer/Login'
 import Start from './vyer/Start'
 import Informationssida from './vyer/Informationssida'
 import Profil from './vyer/Profil'
 import Header from './komponenter/Header'
+import Koldioxid from './komponenter/Koldioxid'
+import Glaci from './komponenter/Glaci'
+import Globala from './komponenter/Globala'
 
 {/*Skapar en funktion App.
   Sätter defaultläge till hooken useState(false), så användaren är utloggad vid första laddning av sidan.
@@ -44,6 +47,9 @@ function App() {
           : ( <>
           <Route path="/profil" element={<Profil />} />
             <Route path="/info" element={<Informationssida />} />
+            <Route path="/koldioxid" element={<Koldioxid/>}/>
+            <Route path="/globala" element={<Globala/>}/>
+            <Route path="/glaci" element={<Glaci/>}/>
             <Route path="/start" element={<Start/>} />
             </>
           

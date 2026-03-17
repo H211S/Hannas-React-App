@@ -1,10 +1,12 @@
 import KortProfil from "../komponenter/KortProfil"
+import Ranking from "../komponenter/Ranking"
 
 function Profil () {
 
 return (
 
-<><KortProfil/></>
+<><KortProfil/>
+<Ranking/></>
 
 )
 

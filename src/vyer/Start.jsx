@@ -1,8 +1,21 @@
+import infoUtbildning from "../data/data"
+import KortProfil from "../komponenter/KortProfil"
+import LektionsKort from "../komponenter/LektionsKort"
+
 function Start () {
 
 return (
 
-<><p>blabla</p></>
+<>
+<KortProfil/>
+
+<div> {infoUtbildning.map((lektion) => 
+(<LektionsKort key={lektion.id}
+    item={lektion} />
+))}
+</div>
+
+</>
 
 )
 
